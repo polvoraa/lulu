@@ -675,7 +675,7 @@ function IntroGate({ onEnter }) {
       <div className="intro-card">
         <div className="intro-card-glow" aria-hidden="true" />
         <p className="intro-title">
-          Mathues separou um <span>presente</span> especial!
+          Matheus separou um <span>presente</span> especial!
         </p>
         <p className="intro-subtitle">
           Um momento unico feito com carinho para celebrar a jornada de voces
