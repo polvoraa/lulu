@@ -607,6 +607,33 @@ function ThingsSheLoves() {
   );
 }
 
+function PhotoGridSection() {
+  const photos = [
+    'WhatsApp Image 2026-05-19 at 16.15.51.jpeg',
+    'WhatsApp Image 2026-05-19 at 16.16.58.jpeg',
+    'WhatsApp Image 2026-05-19 at 16.16.59.jpeg',
+    'WhatsApp Image 2026-05-19 at 16.17.55 (1).jpeg',
+    'WhatsApp Image 2026-05-19 at 16.17.55.jpeg'
+  ];
+
+  return (
+    <section className="photo-memories section-shell">
+      <div className="section-heading reveal">
+        <span className="eyebrow">nossos registros</span>
+        <h2>algumas fotos que guardam um pouco do que a gente e.</h2>
+      </div>
+
+      <div className="photo-grid">
+        {photos.map((photo, index) => (
+          <figure className="memory-photo" key={photo} style={{ '--index': index }}>
+            <img src={`/${photo}`} alt={`Memoria do casal ${index + 1}`} loading="lazy" />
+          </figure>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function SupportLetter() {
   const lines = [
     'tu nao precisa carregar tudo sozinha.',
@@ -696,6 +723,7 @@ function App() {
       <PlayerHero />
       <CoupleCardsSection />
       <ThingsSheLoves />
+      <PhotoGridSection />
       <SupportLetter />
     </main>
   );
